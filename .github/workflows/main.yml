@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  breaktime_job:
+    runs-on: ubuntu-latest
+    name: A job to test breaktime
+    steps:
+      - uses: actions/checkout@v2
+      - id: foo
+        uses: actions/breatime@v1

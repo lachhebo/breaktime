@@ -1,0 +1,7 @@
+name: 'BreakTime'
+description: 'Block CI during weekends and breaktime''d'
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/breaktime.sh
+      shell: bash
