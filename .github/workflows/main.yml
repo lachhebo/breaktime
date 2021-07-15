@@ -6,5 +6,4 @@ jobs:
     name: A job to test breaktime
     steps:
       - uses: actions/checkout@v2
-      - id: foo
-        uses: actions/breaktime-action@v1.1
+      - uses: actions/breaktime-action@v1.1
