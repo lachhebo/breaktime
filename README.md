@@ -21,4 +21,5 @@ CI is blocked (it will failed) if runned:
 
 add in your github action yaml file:
 
-    - uses: actions/breaktime-action@v1.1
+    - name: breaktime-action
+      uses: lachhebo/breaktime@v1.1

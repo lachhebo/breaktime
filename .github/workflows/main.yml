@@ -6,4 +6,5 @@ jobs:
     name: A job to test breaktime
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/breaktime-action@v1.1
+      - name: breaktime-action
+        uses: lachhebo/breaktime@v1.1
