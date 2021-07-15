@@ -5,3 +5,6 @@ runs:
   steps:
     - run: ${{ github.action_path }}/breaktime.sh
       shell: bash
+branding:
+  icon: 'bell-off'  
+  color: 'white'
