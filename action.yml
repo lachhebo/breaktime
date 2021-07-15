@@ -1,5 +1,5 @@
-name: 'BreakTime'
-description: 'Block CI during weekends and breaktime''d'
+name: 'breaktime-action'
+description: 'Block CI during weekends and breaktime'
 runs:
   using: "composite"
   steps:
