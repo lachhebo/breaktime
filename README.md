@@ -9,6 +9,7 @@ CI is blocked (it will failed) if runned:
 
 - during weekends
 - after 20pm 
+- for lunch time (between 12h and 13h)
 
 
 ## why 

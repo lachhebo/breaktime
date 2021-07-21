@@ -25,6 +25,18 @@ display_cow_during_weekend(){
 }
 
 
+display_cow_during_lunchtime(){
+    echo " __________________________________
+< time to relax, see you after lunch >
+ ----------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/
+                ||----w |
+                ||     ||"
+}
+
+
 check_if_weekend() {
     DATE_DAY=$(date +"%w")
     [[ $DATE_DAY =  0 ]] && display_cow_during_weekend && exit 1 
@@ -37,6 +49,13 @@ check_if_night() {
     [[ $DATE_HOUR -lt 3 ]]  && display_cow_at_night && exit 1
 }
 
+check_if_lunchtime() {
+    DATE_HOUR=$(date +"%k")
+    [[ $DATE_HOUR -eq 12 ]] && display_cow_during_lunchtime && exit 1
+    [[ $DATE_HOUR -eq 13 ]] && display_cow_during_lunchtime && exit 1 
+}
+
 check_if_night
 check_if_weekend
+check_if_lunchtime
 exit 0
